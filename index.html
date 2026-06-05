@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>保函查询结果</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  background:#f5f6fa;
+  font-family:'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif;
+  padding:20px;
+}
+.card{
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 4px 24px rgba(0,0,0,.08);
+  padding:36px 40px;
+  max-width:680px;
+  width:100%;
+}
+.header{
+  text-align:center;
+  border-bottom:2px solid #1a73e8;
+  padding-bottom:18px;
+  margin-bottom:24px;
+}
+.header h1{
+  font-size:22px;
+  color:#1a73e8;
+  letter-spacing:4px;
+  font-weight:700;
+}
+.header .sub{
+  font-size:13px;
+  color:#888;
+  margin-top:4px;
+}
+.status-bar{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  background:#e8f5e9;
+  border:1px solid #a5d6a7;
+  border-radius:8px;
+  padding:10px 0;
+  margin-bottom:24px;
+  font-size:16px;
+  color:#2e7d32;
+  font-weight:600;
+}
+.status-bar .dot{
+  width:10px;height:10px;
+  background:#43a047;
+  border-radius:50%;
+  display:inline-block;
+}
+.info-table{
+  width:100%;
+  border-collapse:collapse;
+}
+.info-table tr{
+  border-bottom:1px solid #eee;
+}
+.info-table tr:last-child{
+  border-bottom:none;
+}
+.info-table td{
+  padding:12px 8px;
+  font-size:14px;
+  line-height:1.6;
+  vertical-align:top;
+}
+.info-table td:first-child{
+  width:120px;
+  color:#666;
+  white-space:nowrap;
+  font-weight:500;
+}
+.info-table td:last-child{
+  color:#222;
+  word-break:break-all;
+}
+.info-table .highlight{
+  color:#1a73e8;
+  font-weight:600;
+}
+.footer{
+  margin-top:20px;
+  padding-top:16px;
+  border-top:1px dashed #ddd;
+  text-align:center;
+  font-size:12px;
+  color:#aaa;
+}
+@media (max-width:480px){
+  .card{padding:20px 16px}
+  .info-table td:first-child{width:90px;font-size:13px}
+  .info-table td:last-child{font-size:13px}
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header">
+    <h1>查询保函</h1>
+    <div class="sub">担保保函信息查询结果</div>
+  </div>
+  <div class="status-bar">
+    <span class="dot"></span>
+    查询结果：<span style="font-weight:700">存在</span>
+  </div>
+  <table class="info-table">
+    <tr>
+      <td>保函编号</td>
+      <td>GDGCDBCT0663LY202605264019</td>
+    </tr>
+    <tr>
+      <td>项目名称</td>
+      <td>深圳梧桐凤凰谷项目提升改造工程总承包</td>
+    </tr>
+    <tr>
+      <td>工程受益人</td>
+      <td>深圳凤梧夜游运营管理有限公司</td>
+    </tr>
+    <tr>
+      <td>被保证人</td>
+      <td>深圳文业智能建设科技有限公司</td>
+    </tr>
+    <tr>
+      <td>保函品种</td>
+      <td>承包商履约保函</td>
+    </tr>
+    <tr>
+      <td>担保金额</td>
+      <td>金额最高不超过人民币 <span class="highlight">5,000,000.00</span> 元<br/><span style="font-size:13px;color:#666">（大写：伍佰万整）</span></td>
+    </tr>
+    <tr>
+      <td>担保期限</td>
+      <td>自 <span class="highlight">2026年05月28日</span> 起<br/>至 <span class="highlight">2026年09月28日</span> 止</td>
+    </tr>
+  </table>
+  <div class="footer">
+    本查询结果仅供核实保函信息之用，不构成任何担保或法律意见
+  </div>
+</div>
+</body>
+</html>
